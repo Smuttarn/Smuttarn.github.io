@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,53 +8,192 @@
     <meta name="keywords" content="rebelscum, order66, darthjarjar">
     <meta name="generator" content="Visual Studio Code" />
     <meta name=”robots” content=”index”>
+    <link rel="stylesheet" href="style.css">
     <title>Title of the document</title>
 </head>
 
 <body>
     <header>
-        <h1>This is the tale of Pablo</h1>
-        <section name="links">
-            <nav>
+        <h1>HOME</h1>
+        <section>
+            <nav id="links">
                 <a href="home.html">Home</a>
                 <a href="now.html">Now</a>
                 <a href="history.html">History</a> 
                 <a href="future.html">Future</a> 
             </nav>
         </section>
+        <p id = "author">Author: Pablo Ahava Pizarro</p>
     </header>
-    <footer>
-        <p>Author: Pablo Ahava Pizarro</p>
-    </footer>
 
 
     <main>
-        <h2>This is a story all about how...</h2>
-        <p>
-            ... I fell and slipped, turned upside down
-            <br>
-        </p>
+        <section  id = "description">
+            <h2>The story of Me</h2>
+            <p>
+                Ever since I could walk, gaming has occupied most of my free time and for the last 10 years I’ve begun pursuing it as my career.<br>
+                Game art, programming and HCI are my main passions and I strive to always better myself.<br>
+                The most effective way for me to learn is working in structured groups but I’m just as comfortable working individually. <br>
+                I consider myself a “curious gamer” as I’ve made a habit of playing most newly released titles, regardless of genre, and completing about half of them. <br>
+                Studying game development has truly changed the experience of gaming for me, making me analyze mechanics and assets as I play. <br>
+                I feel that my diverse gaming experience helps me create more player-friendly features and assets.<br>
+            </p>
+        </section>
+
+        <details>
+            <summary>(My philosophy in code)</summary>
+        <pre>
+        public class ThirstForKnowledge {
+
+            static void main(String[] args){
+
+                Person p = new Person("Pablo");
+
+                do {
+                    p.learnNewStuff();
+                } while (!haveILearntEnough());
+            }
+
+            private bool haveILearntEnough(){
+                return false;
+            }
+        }
+            </pre>
+        </details>
     </main>
 
-    <section>
-        <h2>THIS IS A SECTION!</h2>
-        <p>(section paragraph)</p>
-        <footer>First footer</footer>
-        <section>
-            <h3>A section within a section, what?</h3>
-            <footer>Second footer</footer>
-        </section>
-    </section>
+        <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+           <fieldset>
+               <legend><b>Contact me</b></legend>
 
-    <article>
-        <h4>Who killed the radiostar: An in-depth analysis</h4>
-        <p>Video</p>
-        <aside>This is the sideinfo for the article</aside>
-    </article>
+               <label for="fname">First Name: </label> <br>
+               <input type="text" id="fname" pattern="[a-zA-Z]{}" title="You may only use letters A-Z." autofocus required><br>
+               <label for="lname">Last Name: </label><br>
+               <input type="text" id="lname" pattern="[A-Za-z]{}" title="You may only use letters A-Z." required><br><br>
+               
+               <input type="radio" id="male" name="gender">
+               <label for="male">Male</label><br>
+               <input type="radio" id = "female" name="gender">
+               <label for="female">Female</label><br>
+               <input type="radio" id = "other" name="gender">
+               <label for="other">Other</label><br><br>
+   
+               <label for="email">Email: </label><br>
+               <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Incorrect e-mail syntax." required><br><br>
+   
+               <p>Do you know how checkboxes work?</p>
+               <input type="checkbox" name="yes" id="yes">
+               <label for="yes">Yes</label><br>
+               <input type="checkbox" name="no" id="no">
+               <label for="no">No</label><br><br>
+   
+               <label for="trueanswer">Choose the true answer: </label>
+               <select name="trueanswer" id="trueanswer">
+                   <option value="The true answer">...</option>
+                   <option value="second">This is true, the second option is false</option>
+                   <option value="third">This is false, the third option is true</option>
+                   <option value="fourth">This is false, the first option is true</option>
+               </select><br><br>
+               
+               <label for="favorite">Choose the best topping for pizza:</label>
+               <input list="toppings" name="favorite" id="favorite" pattern="[A-Za-z]{}" title="You may only use letters A-Z.">
+               <datalist id="toppings">
+                    <option value="Salami"></option>
+                    <option value="Feta Cheese"></option>
+                    <option value="Shrimps"></option>
+                    <option value="Mozzarella"></option>
+                    <option value="Ham"></option>
+                    <option value="Anything but pineapple or banana"></option>
+               </datalist><br><br>
+   
+               <label for="message" >Message: </label><br>
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="Write you message..." required></textarea><br>
+   
+   
+               <input type="file" name="file"><br><br>
+   
+               <input type="submit" value="Submit your message!">
+               
+               
+           </fieldset>
+           
 
-    <aside>This is the sideinfo for the entire page</aside>
+        </form>
 
 
+
+        <article>
+            <h3>Games that I currently play, sorted by genre:</h3>
+            <dl>
+                <dt><b>Action/Adventure</b></dt>
+                <dd>Yakuza: Like a Dragon</dd>
+                <dd>Hitman 3</dd>
+                <dd>Dying Light</dd>
+                <dt><b>Sports</b></dt>
+                <dd>UFC 4</dd>
+                <dd>Fight Night: Champion</dd>
+                <dt><b>Indie</b></dt>
+                <dd>Little Nightmares</dd>
+                <dd>Unto The End</dd>
+            </dl>
+
+            <section>
+                <h2>Interesting places I'd like to visit</h2><br>
+                <figure>
+                    <img src="adventure.gif" alt="Bilbo Baggins running">
+                    <figcaption>(A representation of my inner self when visiting a new place)</figcaption>
+                </figure>
+                <table>
+                    <thead>            
+                        <tr>
+                            <th><u>Name</u> </th>
+                            <th><u>Country</u> </th>
+                            <th><u>City</u> </th>
+                            <th><u>Have been before?</u></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>"San Pedro de Atacama"</td>
+                            <td>Chile</td>
+                            <td>Atacama Desert</td>
+                            <td>No</td>
+                        </tr>
+            
+                        <tr>
+                            <td>"La tour de Eiffel"</td>
+                            <td>France</td>
+                            <td>Paris</td>
+                            <td>Yes</td>
+                        </tr>
+            
+                        <tr>
+                            <td>"Machu Picchu"</td>
+                            <td>Peru</td>
+                            <td>Cordillera Oriental</td>
+                            <td>No</td>
+                        </tr>
+    
+                        <tr>
+                            <td>"The Great Wall of China"</td>
+                            <td>China</td>
+                            <td>(Multiple)</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody> 
+                </table>
+            </section>
+            
+        </article>
+    <footer>
+        <fieldset id= "contactinfo">
+            <legend>Contact information</legend>
+            <p>Name: Pablo Ahava Pizarro</p>
+            <p>Phonenumber: +46707499039</p>
+            <a href="mailto:pablo.ahavapizarro@gmail.com?subject=Mail" id = "maillink">Email Me</a><br>
+        </fieldset>
+</footer>
 </body>
 
 </html>

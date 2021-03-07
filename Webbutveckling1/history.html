@@ -1,58 +1,127 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Pablo Ahava Pizarro">
-    <meta name="description" content="A long time ago in a galaxy far, far away...">
-    <meta name="keywords" content="rebelscum, order66, darthjarjar">
+    <meta name="description" content="A ">
+    <meta name="keywords" content="history, past, beginning">
     <meta name="generator" content="Visual Studio Code" />
     <meta name=”robots” content=”index”>
+    <link rel="stylesheet" href="style.css">
     <title>Title of the document</title>
 </head>
 
 <body>
 
     <header>
-        <h1>This is the HISTORY page</h1>
-        <footer>
-            <p>Author: Pablo Ahava Pizarro</p>
-        </footer>
-        <section name="links">
-            <nav>
+        <h1>HISTORY</h1>
+        <section>
+            <nav id="links">
                 <a href="home.html">Home</a>
                 <a href="now.html">Now</a>
                 <a href="history.html">History</a> 
                 <a href="future.html">Future</a> 
             </nav>
         </section>
+        <p id = "author">Author: Pablo Ahava Pizarro</p>
     </header>
 
 
-
     <main>
-        <h2>This is the main content of the page</h2>
-        <p>This is a paragraph.</p>
+        <section  id = "description">
+            <h2>The story so far</h2>
+            <p>
+                Early one Friday <time datetime="04:00">morning</time> in <time datetime="1994-09-09">1994</time>, a child was born. <br>
+                'Twas me.<br> <br>
+                Swedish became my third language, thanks to my Finnish mother and Chilean father. I am very thankful of my upbringing and what my parents did for us. <br>
+                My sister and I were encouraged to pursue happiness in our lives, while showing acceptance and respect towards others. <br>
+                Our household always had laughter as a main ingredient, which I try to bring with me wherever I go. <br> <br>
+                Through kindergarten to high-school I had trouble knowing what I would want to do with my life. No subject felt particularly interesting for me to want to pursue. <br>
+                The only constant thing was my fascination for languages. Later during the course of my education I took a liking to learning and comparing them. <br>
+                I began exploring languages with roots in Latin, in which Spanish helped med immensely and the learning process was facilitated thanks to similarities in grammar. <br>
+                I reflected upon how I was getting used to the process of <i>learning</i> a new language. I'd break it up into steps and exposed myself to situations in which I'd be forced to try and speak.<br>
+                It was during my time attempting to learn Mandarin that I began thinking of other types of languages, mainly those that were used to communicate with machines...
+            </p>
+        </section>
     </main>
 
-    <section>
-        <h2>THIS IS A SECTION!</h2>
-        <p>(section paragraph)</p>
-        <footer>First footer</footer>
-        <section>
-            <h3>A section within a section, what?</h3>
-            <footer>Second footer</footer>
-        </section>
-    </section>
 
     <article>
-        <h4>Who killed the radiostar: An in-depth analysis</h4>
-        <p>Video</p>
-        <aside>This is the sideinfo for the article</aside>
+        <h2>Extra info:</h2>
+    <section>
+        <h2>List of things that I used to like:</h2>
+        <ul>
+            <li>The colour <mark>Yellow</mark></li>
+            <li>Playing video games, mostly on PC</li>
+            <li>Reading fantasy litterature</li>
+            <li>Eating popcorn</li>
+        </ul>
+
+        <h2>List of the order in which I learnt languages:</h2>
+        <ol>
+            <li>Spanish and Finnish</li>
+            <li>Swedish</li>
+            <li>English</li>
+            <li>French</li>
+            <li>Mandarin</li>
+            <li>Portuguese</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>One of my old favourite poems:</h2>
+        <!--TODO Make script to switch to english translation -->
+        <blockquote cite = "https://www.poeticous.com/julio-cortazar/yo-tuve-un-hermano?locale=es">
+            <p><b>"Che" - Julio Cortazar</b><br><br>
+                <i>
+                Yo tuve un hermano,<br>
+                no nos vimos nunca <br>
+                pero no importaba.<br><br>
+                Yo tuve un hermano<br>
+                que iba port los montes<br>
+                mientras yo dormía.<br>
+                Lo quise a mi modo,<br>
+                le tomé su voz<br>
+                libre como el agua, <br>
+                caminé de ratos<br>
+                cerca de su sombra.<br><br>
+                No nos vimos nunca<br>
+                pero no importaba,<br>
+                mi hermano despierto<br>
+                mientras yo dormía,<br>
+                mi hermano mostrándome<br>
+                detrás de la noche<br>
+                su estrella elegida.
+            </i></p>
+        </blockquote>
+
+    </section>
+
+
+        <aside>
+            <h4>Question of the day: Who killed the radiostar?</h4>
+            <details>
+                <summary><mark>The Answer</mark></summary>
+                <video controls>
+                    <source src="videokilledtheradio.mp4" type="video/mp4">
+                </video>
+            </details>
+
+        </aside>  
     </article>
 
-    <aside>This is the sideinfo for the entire page</aside>
-
+    <aside>
+        
+    </aside>
+    <footer>
+        <fieldset id= "contactinfo">
+            <legend>Contact information</legend>
+            <p>Name: Pablo Ahava Pizarro</p>
+            <p>Phonenumber: +46707499039</p>
+            <a href="mailto:pablo.ahavapizarro@gmail.com?subject=Mail" id = "maillink">Email Me</a><br>
+        </fieldset>
+</footer>
 
 </body>
 

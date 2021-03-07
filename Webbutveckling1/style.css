@@ -1,0 +1,110 @@
+
+@font-face{
+    font-family: myFont;
+    src: url(Locanita.ttf);
+}
+
+header{
+    background-color :#ec6b01;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+    height: 200px;
+    width: 95%;
+    left :2.5%;
+    
+}
+
+header h1{
+    position: relative;
+    padding-left: 30px;
+    top :20px;
+    font-size: 500%;
+    color: white;
+    font-family: myFont;
+}
+
+#description{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#author{
+    position: absolute;
+    bottom: 185px;
+    right: 2px;
+    font-family: myFont;
+    color:white;
+    background-color: black;
+}
+
+body{
+    font-family: myFont;
+    font-size: 130%;
+    background-color:black;
+    color: white;
+    
+}
+
+main{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 60%;
+    border-style: solid;
+}
+
+
+#links a{
+    position: relative;
+    left: 30px;
+    background-color:red;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: myFont;
+    font-size: 30px;
+}
+
+#links a:hover{
+    background-color: orange;
+}
+
+#links a:active{
+    background-color: lightsalmon;
+}
+
+#maillink{
+    background-color: #ec6b01;
+    color: white;
+    font-size: 30px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+#contactinfo{
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    height: 170px;
+    width: 200px;
+    right: 10px;
+    bottom: 25px;
+}
+
+
+aside{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

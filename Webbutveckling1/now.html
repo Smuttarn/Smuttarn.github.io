@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,60 +8,156 @@
     <meta name="keywords" content="rebelscum, order66, darthjarjar">
     <meta name="generator" content="Visual Studio Code" />
     <meta name=”robots” content=”index”>
+    <link rel="stylesheet" href="style.css">
     <title>Title of the document</title>
 </head>
 
 <body>
 
     <header>
-        <h1>This is the NOW page</h1>
-        <footer>
-            <p>Author: Pablo Ahava Pizarro</p>
-        </footer>
-        <section name="links">
-            <nav>
+        <h1>NOW</h1>
+        <section>
+            <nav id = "links">
                 <a href="home.html">Home</a>
                 <a href="now.html">Now</a>
                 <a href="history.html">History</a> 
                 <a href="future.html">Future</a> 
             </nav>
         </section>
+        <p id = "author">Author: Pablo Ahava Pizarro</p>
     </header>
 
 
 
     <main>
-        <h2>This is the main content of the page</h2>
-        <p>This is a paragraph.</p>
+        <section id = "description">
+            <h2>Nothing like the present</h2>
+            <p>
+                Today I study computer science at a great university with even greater schoolmates. <br>
+                My appartement is a mere trainstation away where I live with my beautiful girlfriend whom I've been together with since 2013. <br>
+                She makes me smile with everything she does and truly is my best friend. I could go on forever about her so it's probably best if I stop now. <br><br>
+    
+                I am particularly interested in efficient algorithms and datastructures, aswell as anything that has to do with databases or data warehousing. <br>
+                The pure aspect of problem-solving is what most intrigues me about programming. Even more interesting is the fact that most problems that arise within programming <br>
+                are errors in the programmers way of thinking, not the machine. Therefore I often practice logical reasoning and I enjoy playing sudoko daily.<br>
+                Troubleshooting and testing has been a big part of my studies and I look forward to putting my skills to the test and improving in a working environment. <br>
+                My vision for my code is for it to be readable, structured and well-documented, making it easily accessible for anyone who works on it as well as for future self.<br><br>
+    
+                Apart from such logical games I am also an avid gamer. It's a hobby that has occupied most of my freetime during life and that's nothing I intend to change anytime soon.<br>
+                I consider myself a “curious gamer” as I’ve made a habit of playing most newly released titles, regardless of genre, and completing well over half of them. <br>
+                Studying game development has truly changed the experience of gaming for me, making me analyze mechanics and assets as I play. <br>
+                I feel that my diverse gaming experience helps me create more player-friendly features and assets.<br>
+    
+            </p>
+        </section>
+
     </main>
 
+    <article>
+        <h2>Extra info:</h2>
+        <figure>
+            <img src="teide.jpg" alt="Picture of a guy on a rock">
+            <figcaption>Me standin atop a rock on the volcano El Teide in Tenerife</figcaption>
+        </figure>
+
     <section>
-        <h2>THIS IS A SECTION WITH VITAL INFORMATION!</h2>
-        <p>MovieQuote</p>
+        <h2>List of things that I like:</h2>
+        <ul>
+            <li>The colour Red</li>
+            <li>Playing video games, mostly on Xbox</li>
+            <li>Reading fiction and classics</li>
+            <li>Eating popcorn</li>
+        </ul>
+
+        <h2>List of the order in which I learnt programming languages:</h2>
+        <ol>
+            <li>C#</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+        </ol>
+        <footer>(Keep in mind that my skill varies greatly between the different lingos.)</footer>
+    </section>
+
+    <section>
+        <h2>A personally memorable movie quote:</h2>
+        <p>The Lord Of The Rings: The Two Towers</p>
         <blockquote cite= "https://www.moviequotedb.com/movies/lord-of-the-rings-the-two-towers-the/quote_14091.html">
             <strong>Aragorn:</strong> Legolas! What do your Elf-eyes see?
             <br><strong>Legolas:</strong> The Uruks turn northeast... They are taking the Hobbits to Isengard!
             <br><strong>Aragorn:</strong> ...Saruman.
-            <br><br><mark>Geographically</mark>, Legolas should have said northwest.
         </blockquote>
-        <section>
-            <h3>PRE</h3>
-            <footer>
-                <pre>
-                    I did not know what to write
-                </pre>
-            </footer>
-        </section>
     </section>
 
-    <article>
         <h4>Who killed the radiostar: An in-depth analysis</h4>
         <p>Video</p>
-        <aside>This is the sideinfo for the article</aside>
     </article>
 
-    <aside>This is the sideinfo for the entire page</aside>
+    <aside>
+        <audio controls autoplay>
+            <source src="theshire.mp3" type="audio/mpeg">
+        </audio>
+        <table style="border: 1px solid black;">
+            <caption><b>Courses that I have left:</b></caption>
+            <thead>            
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>What is left</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Webbutveckling 1</td>
+                    <td>WPROG1</td>
+                    <td>Assignments and "companion test"</a></td>
+                </tr>
+    
+                <tr>
+                    <td>Programming for internet</td>
+                    <td>IPROG</td>
+                    <td>Assignments and "companion test"</a></td>
+                </tr>
+    
+                <tr>
+                    <td>Bachelor's Thesis in Computer and Systems Sciences</td>
+                    <td>IB015F</td>
+                    <td>Write and conduct research method</td>
+                </tr>
+            </tbody>
 
+
+            <tfoot>
+
+                <tr>
+                    <td rowspan="1">Total Courses: 3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Freedom!</td>
+                </tr>
+
+            </tfoot>
+
+            
+        </table>
+
+
+
+    </aside>
+
+    <footer>
+        <fieldset id= "contactinfo">
+            <legend>Contact information</legend>
+            <p>Name: Pablo Ahava Pizarro</p>
+            <p>Phonenumber: +46707499039</p>
+            <a href="mailto:pablo.ahavapizarro@gmail.com?subject=Mail" id = "maillink">Email Me</a><br>
+        </fieldset>
+</footer>
 
 </body>
 
