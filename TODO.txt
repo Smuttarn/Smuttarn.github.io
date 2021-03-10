@@ -1,3 +1,6 @@
 
 //Fixed header on scroll
 https://www.w3schools.com/howto/howto_js_sticky_header.asp
+
+//Make music play through entire page
+https://stackoverflow.com/questions/15612120/how-do-i-make-an-audio-file-play-continuously-on-all-pages
