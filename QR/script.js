@@ -9,7 +9,8 @@ var personArray = [0];
 // })
 
 window.onload = function(){
-    document.getElementById("spawnProfile").onclick = spawnHamodi;
+    //document.getElementById("spawnProfile").onclick = spawnHamodi;
+    spawnHamodi();
 }
 
 function spawnHamodi(){
