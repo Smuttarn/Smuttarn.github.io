@@ -7,11 +7,13 @@ h1{
 }
 
 h2{
-    font-size: 30px;;
+    font-size: 30px;
 }
 
 #holderImage{
     border: 5px solid black;
+    width: 500px;
+    height: auto;
 }
 
 #information{
@@ -19,7 +21,8 @@ h2{
     background-color: gainsboro;
 }
 
-#spawnProfile{
-    width: 100px;
-    height: 50px;
+body{
+    position: relative;
+    width: 80%;
+    left: 10%;
 }
