@@ -8,21 +8,33 @@ h1{
 
 h2{
     font-size: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 80%;
 }
+
+#textFields{
+    position: relative;
+    
+    left: 10%;
+}
+
+
 
 #holderImage{
     border: 5px solid black;
     width: 500px;
     height: auto;
+    position: relative;
 }
 
 #information{
-    padding: 200px;
-    background-color: gainsboro;
-}
-
-body{
     position: relative;
     width: 80%;
     left: 10%;
+    background-color: gainsboro;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
