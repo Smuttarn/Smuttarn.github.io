@@ -10,7 +10,7 @@ window.onload = function(){
 }
 
 function passwordCheck(){
-    var correct = "mangalsolna";
+    var correct = "safetyfirst";
     var input = prompt("Enter password: ", "");
     if(input == correct){
         var profile = getRandomProfile();
