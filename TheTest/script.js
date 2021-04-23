@@ -1,7 +1,7 @@
 
 
 //Testing jQuery
-var hasClicked = false;
+var hasClicked = true;
 $("#testButton").click(function(){
     if(hasClicked){
         $("#test").text("Something");
