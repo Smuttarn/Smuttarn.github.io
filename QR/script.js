@@ -11,12 +11,23 @@ window.onload = function(){
 
 function passwordCheck(){
     var correct = "safetyfirst";
+    var spawnPablo = "safetypablo";
+    var spawnHamodi = "safetyhamodi";
     var input = prompt("Enter password: ", "");
     if(input == correct){
         var profile = getRandomProfile();
         loadInfo(profile.schoolID);
         return;
     }
+    else if(input == spawnPablo){
+        loadInfo("paah4127");
+        return;
+    }
+    else if(input == spawnHamodi){
+        loadInfo("moja1337");
+        return;
+    }
+    alert("Invalid input");
     passwordCheck();
 }
 
