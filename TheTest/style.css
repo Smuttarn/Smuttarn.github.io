@@ -1,5 +1,10 @@
 
 
+@font-face{
+    font-family: digitalFont;
+    src: url(retro_computer_personal_use.ttf);
+}
+
 
 #background{
     background:  #bbff99;
@@ -12,32 +17,42 @@
 }
 
 #redButton{
-    width: 75px;
-    height:75px;
+    width: 100px;
+    height:100px;
     border-radius: 50%;
     background-color: red;
-    position:relative;
+    position:absolute;
     left:50%;
-    border:3px solid black;
+    top: 500px;
+    border:7px solid gray;
 
     transform: translate(-50%,0);
     
 }
 
 #feedbackText{
-    position:relative;
+    height: auto;
+    width: 100%;
+    position:absolute;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+    left:50%;
+    top:100px;
+    transform:translate(-50%, 0);
+    font-family: digitalFont;
+    color:black;
 }
 
 
 
 #playWindow{
     position:absolute;
-    width: 50%;
-    left:50%;
-    top: 25%;
-    transform:translate(-50%,-50%);
-
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    border: 1px solid black;
 }
+
 
