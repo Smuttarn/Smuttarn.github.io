@@ -5,15 +5,8 @@ var timestamp;
 
 
 
-$("#redButton").click(function(){
-    clicks++;
-    clickCheck();
-})
-
 window.onload = function(){
     getTimestamp();
-    //changeText("Nothing");
-
     openingScene();
 }
 
@@ -21,32 +14,42 @@ window.onload = function(){
 function openingScene(){
     $("#redButton").hide();
     $("#feedbackText").hide();
+    clickCheck();
 
-    $("#redButton").fadeIn(3000, function(){
-        $("#feedbackText").fadeIn(2000, function(){
-            $(this).text("Nothing");
-        });
+    $("#feedbackText").fadeIn(3000, function(){
+        $("#redButton").fadeIn(2000);
     });
 }
 
 
-function disableButton(){
-    $("#redButton").css("background-color", "red");
-    $("#redButton").css("border", "7px solid darkgray");
+$("#redButton").click(function(){
+    clicks++;
+    clickCheck();
+})
+
+
+
+$(document).ready(function(){
+    $("#redButton").css("cursor", "pointer");
+    buttonActive(true);
+})
+
+function buttonActive(status){
+    if(status){
+        $("#redButton").css("background-color", "red");
+        $("#redButton").css("border", "7px solid darkgray");
+    }
+    else if(!status){
+        $("#redButton").css("background-color", "gray");
+        $("#redButton").css("border", "10px solid darkgray");
+    }
 }
-
-function enableButton(){
-    $("#redButton").css("background-color", "gray");
-    $("#redButton").css("border", "10px solid darkgray");
-}
-
-
 
 function changeText(text){
     $("#feedbackText").fadeOut(500, function(){
-        disableButton();
+        buttonActive(true);
         $(this).text(text);
-    }).fadeIn(800, enableButton());
+    }).fadeIn(800, buttonActive(false));
 }
 
 function getTimestamp(){
@@ -68,7 +71,7 @@ function clickCheck(){
     case 1: case 3: case 7: case 11:
         changeText("Something");
         break;
-    case 2: case 4: case 6: case 12:
+    case 0: case 2: case 4: case 6: case 12:
         changeText("Nothing");
         break;
     case 5:
@@ -86,6 +89,11 @@ function clickCheck(){
     case 13:
         changeText("You've already wasted " + getWastedTime() + " seconds of your life..");
         break;
+    case 14:
+        changeText("Tbh, you ain't got much time.");
+        break;
+
+
     }
 }
 
