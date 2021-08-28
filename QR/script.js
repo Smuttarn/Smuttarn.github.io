@@ -1,5 +1,6 @@
 
 var personArray = [0];
+var personMap = new Map();
 var locationArray = ["Spellabbet, 3rd floor", "ID-labb, 3rd floor", "D4, 3rd floor", "Entrance, ground floor", "SSIS, 4th floor", "DSV Helpdesk, 3rd floor"];
 
 
@@ -53,10 +54,12 @@ function createProfile(name, id, phone, active, imgSrc){
         imageSource: imgSrc
     };
     personArray.push(profileObj);
+    personMap.set(id, profileObj);
 }
 
 function loadInfo(id){
-    var personToLoad = searchForID(id);
+    //var personToLoad = searchForID(id);
+    var personToLoad = personMap.get(id);
     document.getElementById("name").innerHTML += personToLoad.fullName;
     document.getElementById("schoolID").innerHTML += personToLoad.schoolID;
     document.getElementById("phoneNumber").innerHTML += personToLoad.phoneNumber;
@@ -68,7 +71,7 @@ function loadInfo(id){
 }
 
 function setColorActiveStudent(id){
-    if(searchForID(id).activeStudent){
+    if(personMap.get(id).activeStudent){
         document.getElementById("activeStudent").style.color = "green";
         return;
     }
